@@ -2,11 +2,10 @@
 
 namespace PizzaTest.Controllers
 {
-    public class MainController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class MainController : ControllerBase
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
     }
 }
